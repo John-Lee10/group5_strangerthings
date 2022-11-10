@@ -1,0 +1,33 @@
+/* ===============================
+Home Page Header Styling
+===================================*/
+header {
+    background-color:black;
+    background: linear-gradient(0deg,black,rgb(9, 11, 113));
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__nav-link {
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 90px;
+    cursor: pointer;
+    transition: 300ms;
+}
+.header__nav-link:hover {
+color: rgb(255, 0, 38);
+}
+.header__nav {
+    padding-top: 30px;
+}
+h1 {
+    color: white;
+}
+.logo-container {
+    padding-top: 30px;
+}
