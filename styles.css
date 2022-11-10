@@ -49,4 +49,9 @@ color: rgb(255, 0, 38);
 
  .season_title{
     text-decoration: underline;
+    font-size: 25px;
+ }
+
+ .season_header{
+    text-align: center;
  }
