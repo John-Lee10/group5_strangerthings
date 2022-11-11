@@ -5,47 +5,159 @@
 /* ===============================
 Header Styling
 ===================================*/
-header {
-    background-color:black;
-    background: linear-gradient(0deg,black,rgb(9, 11, 113));
-    padding-bottom: 30px;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header__nav-link {
-    color:white;
+.header {
+   background: black;
+   }
+   .header__nav-link {
+    color:black;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    margin: 90px;
+    margin: 60px;
     cursor: pointer;
     transition: 300ms;
-}
-.header__nav-link:hover {
-color: rgb(255, 0, 38);
-}
-.header__nav {
-    padding-top: 30px;
-}
-
-.logo-container {
-    padding-top: 30px;
+    justify-content: center;
+   }
+   .header__nav-link:hover {
+    color: #ff1f28;
+    text-shadow: 2px 2px 5px #ff1f28;
+   }
+   .header__nav {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    height: 80px;
+   }
+   .logo-container {
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    background: linear-gradient(0deg,black,black,rgb(73, 0, 0));
+   }
+   .strangerthings_logo {
     animation-name: floating;
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     margin-left: 30px;
     margin-top: 5px;
-}
+    padding-right: 25px;
+   }
 
 @keyframes floating {
     0% { transform: translate(0,  0px); }
     50%  { transform: translate(0px, 20px); }
     100%   { transform: translate(0px, -0px); }   
 }
+
+   /* ===============================
+   Home Page Styling
+   ===================================*/
+   .home_page_body {
+      background-color: black;
+   }
+   .hero-banner {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   .hero_banner_image {
+       width: 100%;
+       height: auto;
+   }
+   .home_page_text {
+       color: white;
+       padding-top: 30x;
+       padding-left: 10px;
+       padding-right: 10px;
+       margin: 30px;
+       font-family: Arial, Helvetica, sans-serif;
+   }
+   .home_page_h1, .home_page_h2, .home_page_h3 {
+       font-size: 24px;
+       font-family: Arial, Helvetica, sans-serif;
+       color: #ff1f28;
+       text-shadow: 2px 2px 5px #ff1f28;
+       padding-top: 20px;
+       padding-bottom: 5px;
+       font-weight: bold;
+   }
+   .home_page_h4 {
+       background-color: rgb(35, 35, 35);
+       color:#ff1f28;
+       text-shadow: 2px 2px 5px #b4262b;
+       font-size: 42px;
+       font-family: Arial, Helvetica, sans-serif;
+       display: flex;
+       justify-content: center;
+       height: 80px;
+       padding-top: 40px;
+       background: linear-gradient(0deg,rgb(35, 35, 35),rgb(35, 35, 35),black);
+   }
+   .home_page_picture_links {
+       display: flex;
+       justify-content: space-evenly;
+       background-color: rgb(35, 35, 35);
+   }
+   .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
+       cursor: pointer;
+       transition: 300ms;
+   }
+   .explore_characters_icon:hover {
+       width: 250px;
+       height: 250px;
+       box-shadow: 10px 10px 10px black;
+   }
+   .explore_seasons_icon:hover {
+       width: 250px;
+       height: 250px;
+       box-shadow: 10px 10px 10px black;
+   }
+   .explore_collaborations_icon:hover {
+       width: 250px;
+       height: 250px;
+       box-shadow: 10px 10px 10px black;
+   }
+   .home_page_footer {
+       color: white;
+       background-color: rgb(35, 35, 35);
+       display: flex;
+       justify-content: center;
+       padding-top: 60px;
+       padding-bottom: 10px;
+   }
+    /* Media Screen Styling */
+   @media screen and (max-width: 500px) {
+   .hero_banner_image {
+       width: 100%;
+       height: auto;
+   }
+   .strangerthings_logo {
+       width: 300px;
+       height: auto;
+   }
+   .header__nav-link {
+       margin: 8px;
+       font-size: 12px;
+   }
+   
+   .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
+       width: 100px;
+       height: 100px;
+   }
+   }
+   @media screen and (min-width:500px) and (max-width: 1024px) {
+   .header__nav-link {
+       margin: 30px;
+       font-size: 24px;
+   }
+   .hero_banner_image {
+       width: 100%;
+       height: auto;
+   }
+   }
 
 /* Seasons Page Styling */
  .list_of_seasons{
@@ -73,7 +185,7 @@ color: rgb(255, 0, 38);
     justify-content: space-around;
  }
 
- footer{
+ .footer{
     position: fixed;
     text-align: center;
     bottom: 0;
@@ -83,7 +195,7 @@ color: rgb(255, 0, 38);
     font-family: 'Montserrat', sans-serif;
     color: white;
     background-color:black;
-    background: linear-gradient(0deg,black,rgb(9, 11, 113));
+    background: linear-gradient(0deg,black,rgb(73,0,0));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,3 +247,37 @@ color: rgb(255, 0, 38);
  .footer {
     grid-area: footer;
  }
+ /* ===============================
+Media Screenn Styling
+===================================*/
+  @media screen and (max-width: 500px) {
+   .strangerthings_logo {
+       width: 300px;
+       height: auto;
+   }
+   .header__nav-link {
+       margin: 8px;
+       font-size: 12px;
+   }
+    /* Home Page Media Screen Styling */
+    .hero_banner_image {
+      width: 100%;
+      height: auto;
+  }
+    .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
+       width: 100px;
+       height: 100px;
+   }
+   }
+
+   @media screen and (min-width:500px) and (max-width: 1024px) {
+   .header__nav-link {
+       margin: 30px;
+       font-size: 24px;
+   }
+   /* Home Page Media Screen Styling */
+   .hero_banner_image {
+       width: 100%;
+       height: auto;
+   }
+   }
