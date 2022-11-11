@@ -1,15 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 /* ===============================
-Header Styling
+Home Page Header Styling
 ===================================*/
 header {
     background-color:black;
     background: linear-gradient(0deg,black,rgb(9, 11, 113));
     padding-bottom: 30px;
-    margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -18,7 +13,7 @@ header {
     color:white;
     text-decoration: none;
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin: 90px;
     cursor: pointer;
@@ -30,61 +25,9 @@ color: rgb(255, 0, 38);
 .header__nav {
     padding-top: 30px;
 }
-
+h1 {
+    color: white;
+}
 .logo-container {
     padding-top: 30px;
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
 }
-
-@keyframes floating {
-    0% { transform: translate(0,  0px); }
-    50%  { transform: translate(0px, 20px); }
-    100%   { transform: translate(0px, -0px); }   
-}
-
-/* Seasons Page Styling */
- .list_of_seasons{
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px;
-    padding-bottom: 60px;
- }
-
- .season_header{
-    text-align: center;
-    font-weight: 400;
- }
-
- .season_title{
-    font-size: 25px;
- }
-
- details{
-    padding: 0 1rem;
- }
-
- details > summary {
-    cursor: pointer;
-    padding: 1rem;
-    justify-content: space-around;
- }
-
- footer{
-    position: fixed;
-    text-align: center;
-    bottom: 0;
-    height: 30px; 
-    width: 100%;
-    height: 60px;
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    background-color:black;
-    background: linear-gradient(0deg,black,rgb(9, 11, 113));
-    display: flex;
-    align-items: center;
-    justify-content: center;
- }
