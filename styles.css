@@ -150,6 +150,7 @@ Header Styling
 
  .season_title{
     font-size: 25px;
+    color:#ff1f28;
  }
 
  details{
@@ -158,8 +159,13 @@ Header Styling
 
  details > summary {
     cursor: pointer;
-    padding: 1rem;
+    padding: 4px;
     justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    margin: 10px;
  }
 
  /* Footer Styling for Seasons & Collab Page */
