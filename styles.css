@@ -129,36 +129,6 @@ Header Styling
        padding-top: 60px;
        padding-bottom: 10px;
    }
-    /* Media Screen Styling */
-   @media screen and (max-width: 500px) {
-   .hero_banner_image {
-       width: 100%;
-       height: auto;
-   }
-   .strangerthings_logo {
-       width: 300px;
-       height: auto;
-   }
-   .header__nav-link {
-       margin: 8px;
-       font-size: 12px;
-   }
-   
-   .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
-       width: 100px;
-       height: 100px;
-   }
-   }
-   @media screen and (min-width:500px) and (max-width: 1024px) {
-   .header__nav-link {
-       margin: 30px;
-       font-size: 24px;
-   }
-   .hero_banner_image {
-       width: 100%;
-       height: auto;
-   }
-   }
 
 /* Seasons Page Styling */
  .list_of_seasons{
@@ -257,7 +227,7 @@ Header Styling
  .main__grid {
     display: grid;
     grid-template-columns: repeat( auto-fill, minmax(300px, 1fr));
-    grid-auto-rows: 500px;
+    grid-auto-rows: 550px;
     padding: 0px 50px;
     column-gap: 50px;
  }
@@ -272,13 +242,13 @@ Header Styling
  }
  .characters__page {
     display: grid;
-    grid-template-columns: 350px auto;
+    grid-template-columns:auto;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    "header"
+    "nav"
+    "main"
+    "footer";
     box-sizing: border-box;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -332,9 +302,8 @@ Header Styling
  /* ===============================
 Media Screen Styling
 ===================================*/
-
-/*Logo Image and Nav Media Screen Styling*/
     @media screen and (min-width:500px) and (max-width: 1024px) {
+        /*Logo Image and Nav Media Screen Styling*/
         .strangerthings_logo {
             width: 300px;
             height: auto;
@@ -347,22 +316,38 @@ Media Screen Styling
             width: 300px;
             height: auto;
         }
+        /* Character Page Media Screen Styling*/
+        .main__grid-character {
+            margin: 30px auto;
+        }
+        
     }
-   
-/* Home Page Media Screen Styling */
-    .hero_banner_image {
-      width: 100%;
-      height: auto;
-    }
-    .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
-       width: 100px;
-       height: 100px;
-   }
-
-/* Collaborations Page Media Screen Styling */
     @media screen and (max-width: 500px) {
-        .collab_columns {
+       /* Collaborations Page Media Screen Styling */ 
+       .collab_columns {
             width: 100%;
             padding: 12px;
             }
+        /* Home Page Media Screen Styling */
+        .hero_banner_image {
+                width: 100%;
+                height: auto;
+            }
+        .strangerthings_logo {
+                width: 300px;
+                height: auto;
+            }
+        .header__nav-link {
+                margin: 8px;
+                font-size: 12px;
+            }
+            
+        .explore_characters_icon, .explore_seasons_icon, .explore_collaborations_icon {
+                width: 100px;
+                height: 100px;
+            }
+        /* Character Page Media Screen Styling */
+        .main__grid-character {
+            margin: 30px auto;
         }
+    }
