@@ -130,7 +130,7 @@ Header Styling
        padding-bottom: 10px;
    }
     /* Media Screen Styling */
-   @media screen and (max-width: 550px) {
+   @media screen and (max-width: 500px) {
    .hero_banner_image {
        width: 100%;
        height: auto;
